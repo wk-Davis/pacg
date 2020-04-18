@@ -1,0 +1,10 @@
+version: "0"
+services:
+  pacg:
+    container_name: pacg
+    build: .
+    ports:
+      - "4201:4200"
+    volumes:
+      - ".:/pacg"
+      - "/pacg/node_modules"
